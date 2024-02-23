@@ -29,14 +29,16 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
+        {/* <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        />
+        /> */}
+        hello Next
+        como voce ta?
       </div>
 
       <div className={styles.grid}>
