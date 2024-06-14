@@ -1,14 +1,78 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Link from "next/link";
+'use client';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import styles from './page.module.css';
 
-export default function Home() {
+const LoginScreen = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [sec, setSec] = useState(true);
+
+  const handleLogin = () => {
+    if (username === 'a' && password === 'a') {
+      // navigate to homepage
+      window.location.href = '/homepage';
+    } else {
+      alert('Login or password is incorrect');
+    }
+  };
+
   return (
+    <div className={styles.container}>
+      <header className={styles.cabecalho}>
+        <div className={styles.logoContainer}>
+         <Image src="/SpaceSchool.jpeg" alt="SpaceSchool Logo" width={150} height={150} className={styles.logo} />
+         <h1>SpaceSchool</h1>
+        </div>
+    </header>
     <main className={styles.main}>
-      <h1>   olá mundo? </h1>
-      <h2> que tudo aconteça como tem que acontecer</h2>
-      <h3> subtitulo</h3>
-      <Link href={"/sobre"}> Sobre </Link>
-    </main>
+      <div className={styles.formContainer}>
+        <input
+          type="email"
+          placeholder="E-mail"
+          className={styles.input}
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type={sec ? 'password' : 'text'}
+          placeholder="Senha"
+          className={styles.input}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <i className={`icon-mail ${styles.iconMail}`} />
+        <i className={`icon-lock ${styles.iconLock}`} />
+        {sec && (
+          <i
+            className={`icon-eye ${styles.iconSecret}`}
+            onClick={() => setSec(!sec)}
+          />
+        )}
+        <button className={styles.forgotPasswordButton}>
+          <a href="#" className={styles.forgotPasswordText}>
+            Esqueceu a senha?
+          </a>
+        </button>
+      </div>
+      <div className={styles.bottomContainer}>
+        <button className={styles.loginButton} onClick={handleLogin}>
+          Entrar
+        </button>
+      </div>
+      <div className={styles.registerLinkContainer}>
+        <p className={styles.link}>
+          Não possui Login?{' '}
+          <Link href="/register" className={styles.registerLinkText}>
+            Cadastrar-se
+          </Link>
+        </p>
+      </div>
+      </main>
+    </div>
   );
-}
+};
+
+export default LoginScreen;
