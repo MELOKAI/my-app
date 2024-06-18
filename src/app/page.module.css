@@ -25,24 +25,28 @@
   }
   
   .bottomContainer {
-    width: 80%;
+    width: 75%;
     align-items: center;
-    margin-top: 25px;
+    justify-content: center;
+    margin-top:0px;
   }
   
   .loginButton {
-    width: 100%;
+    width: 180%;
     background-color:#e5f1f2;
     padding: 12px 20px;
-    border-radius: 25000px;
-    margin-bottom: px;
-    margin-top: 25px;
+    border-radius: 50px;
+    margin-bottom:50px;
+    margin-top: 10px;
+    align-items: center;
+
   }
   
   .loginButtonText {
     text-align: center;
     color: #fff;
     font-weight: bold;
+    
   }
   
   .registerLinkContainer {
@@ -63,7 +67,8 @@
   }
   
   .link {
-    margin-bottom: 10px;
+    margin-bottom: 100px;
+    align-items: center ;
   }
   
 .main{
@@ -75,36 +80,35 @@
 }
 
   .formContainer {
-    margin-top: 70px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom:0px;
   }
   
   .input {
-    height: 30px;
-    width: 100%;
+    height: 40px;
+    width: 200%;
     border-color: #E5E8ED;
     background-color: #E5E8ED;
-    border-width: 1px;
+    border-width: 5px;
     border-radius: 8px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     padding-left: 60px;
     font-size: 18px;
   }
   
   .iconMail {
-    position: absolute;
     left: 20px;
     top: 12px;
+    margin-top: 50px;
   }
   
   .iconLock {
-    position: absolute;
     left: 20px;
     top: 70px;
   }
@@ -120,8 +124,9 @@
   }
   
   .forgotPasswordText {
-    color: #4fe0e9;
+    color: #204649;
     text-decoration: underline;
     font-size: 16px;
     font-weight: 600;
+
   }

@@ -43,6 +43,11 @@ const LoginScreen = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+      <div className={styles.bottomContainer}>
+        <button className={styles.loginButton} onClick={handleLogin}>
+          Entrar
+        </button>
+      </div>
         <i className={`icon-mail ${styles.iconMail}`} />
         <i className={`icon-lock ${styles.iconLock}`} />
         {sec && (
@@ -51,17 +56,13 @@ const LoginScreen = () => {
             onClick={() => setSec(!sec)}
           />
         )}
-        <button className={styles.forgotPasswordButton}>
+        
+      </div>
+      <button className={styles.forgotPasswordButton}>
           <a href="#" className={styles.forgotPasswordText}>
             Esqueceu a senha?
           </a>
         </button>
-      </div>
-      <div className={styles.bottomContainer}>
-        <button className={styles.loginButton} onClick={handleLogin}>
-          Entrar
-        </button>
-      </div>
       <div className={styles.registerLinkContainer}>
         <p className={styles.link}>
           Não possui Login?{' '}
