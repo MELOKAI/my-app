@@ -12,6 +12,8 @@
 
   .logoContainer {
     margin-bottom: 500px;
+    justify-content: center; 
+    margin-top: 5PX;
     font-weight: bold;
   }
   
@@ -26,13 +28,13 @@
   
   .bottomContainer {
     width: 50%;
-    align-items: center;
+    display: flex;
     justify-content: center;
     margin-top:10px;
   }
   
   .loginButton {
-    width: 50%;
+    width: 150%;
     background-color:#e5f1f2;
     padding: 15px 25px;
     border-radius: 50px;
@@ -53,17 +55,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    position: absolute;
     bottom: 0;
     width: 200px;
-    margin-bottom: 10px;
+    margin-left: 00px;
   }
   
   .registerLinkText {
     color: #4fe0e9;
     text-decoration: underline;
     font-weight: bold;
-    margin-bottom: 10px;
+
   }
   
   .link {
@@ -81,13 +82,13 @@
 }
 
   .formContainer {
-    margin-top: 150px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
-    margin-bottom:0px;
+    width: 20%;
+    margin-top: 100px;
   }
   
   .input {

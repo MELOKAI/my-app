@@ -24,8 +24,9 @@ const LoginScreen = () => {
       <header className={styles.cabecalho}>
         <div className={styles.logoContainer}>
          <Image src="/SpaceSchool.jpeg" alt="SpaceSchool Logo" width={150} height={150} className={styles.logo} />
-         <h1>SpaceSchool</h1>
+    
         </div>
+
     </header>
     <main className={styles.main}>
       <div className={styles.formContainer}>
@@ -59,6 +60,8 @@ const LoginScreen = () => {
           Entrar
         </button>
       </div>
+
+
       <button className={styles.forgotPasswordButton}>
           <a href="#" className={styles.forgotPasswordText}>
             Esqueceu a senha?
@@ -71,6 +74,7 @@ const LoginScreen = () => {
             Cadastrar-se
           </Link>
         </p>
+      
       </div>
       </main>
     </div>
