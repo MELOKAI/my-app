@@ -11,8 +11,8 @@
 }
 
   .logoContainer {
-    align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 500px;
+    font-weight: bold;
   }
   
   
@@ -20,21 +20,21 @@
     text-align: center;
     color: #181C1F;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 100px;
     font-size: 22px;
   }
   
   .bottomContainer {
-    width: 75%;
+    width: 50%;
     align-items: center;
     justify-content: center;
-    margin-top:0px;
+    margin-top:10px;
   }
   
   .loginButton {
-    width: 180%;
+    width: 50%;
     background-color:#e5f1f2;
-    padding: 12px 20px;
+    padding: 15px 25px;
     border-radius: 50px;
     margin-bottom:50px;
     margin-top: 10px;
@@ -67,8 +67,9 @@
   }
   
   .link {
-    margin-bottom: 100px;
-    align-items: center ;
+    margin-bottom:0px;
+  
+
   }
   
 .main{
@@ -120,7 +121,7 @@
   }
   
   .forgotPasswordButton {
-    align-items: flex-end;
+    align-items: center;
   }
   
   .forgotPasswordText {
@@ -128,5 +129,6 @@
     text-decoration: underline;
     font-size: 16px;
     font-weight: 600;
-
+    margin-bottom: 100px;
+ 
   }

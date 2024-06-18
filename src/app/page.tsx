@@ -43,11 +43,7 @@ const LoginScreen = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-      <div className={styles.bottomContainer}>
-        <button className={styles.loginButton} onClick={handleLogin}>
-          Entrar
-        </button>
-      </div>
+  
         <i className={`icon-mail ${styles.iconMail}`} />
         <i className={`icon-lock ${styles.iconLock}`} />
         {sec && (
@@ -57,6 +53,11 @@ const LoginScreen = () => {
           />
         )}
         
+      </div>
+      <div className={styles.bottomContainer}>
+        <button className={styles.loginButton} onClick={handleLogin}>
+          Entrar
+        </button>
       </div>
       <button className={styles.forgotPasswordButton}>
           <a href="#" className={styles.forgotPasswordText}>
