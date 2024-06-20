@@ -12,10 +12,10 @@ const LoginScreen = () => {
 
   const handleLogin = () => {
     if (username === 'a' && password === 'a') {
-      // navigate to homepage
+      // navegar para a página inicial
       window.location.href = '/homepage';
     } else {
-      alert('Login or password is incorrect');
+      alert('Login ou senha incorretos');
     }
   };
 
@@ -23,62 +23,52 @@ const LoginScreen = () => {
     <div className={styles.container}>
       <header className={styles.cabecalho}>
         <div className={styles.logoContainer}>
-         <Image src="/SpaceSchool.jpeg" alt="SpaceSchool Logo" width={150} height={150} className={styles.logo} />
-    
+          <Image src="/SpaceSchool.jpeg" alt="Logo SpaceSchool" width={150} height={150} className={styles.logo} />
         </div>
-
-    </header>
-    <main className={styles.main}>
-      <div className={styles.formContainer}>
-        <input
-          type="email"
-          placeholder="E-mail"
-          className={styles.input}
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type={sec ? 'password' : 'text'}
-          placeholder="Senha"
-          className={styles.input}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-  
-        <i className={`icon-mail ${styles.iconMail}`} />
-        <i className={`icon-lock ${styles.iconLock}`} />
-        {sec && (
-          <i
-            className={`icon-eye ${styles.iconSecret}`}
-            onClick={() => setSec(!sec)}
+      </header>
+      <main className={styles.main}>
+        <div className={styles.formContainer}>
+          <input
+            type="email"
+            placeholder="E-mail"
+            className={styles.input}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
-        )}
-        
-      </div>
-      <div className={styles.bottomContainer}>
-        <button className={styles.loginButton} onClick={handleLogin}>
-          Entrar
-        </button>
-      </div>
-
-
-      <button className={styles.forgotPasswordButton}>
-          <a href="#" className={styles.forgotPasswordText}>
-            Esqueceu a senha?
-          </a>
-        </button>
-
-      <div className={styles.registerLinkContainer}>
-        
-        <p className={styles.link}>
-          Não possui Login?{' '}
-        
-        <Link href="/register" className={styles.registerLinkText}>
-            Cadastrar-se
-          </Link>
-        </p>
-      
-      </div>
+          <input
+            type={sec ? 'password' : 'text'}
+            placeholder="Senha"
+            className={styles.input}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <i className={`icon-mail ${styles.iconMail}`} />
+          <i className={`icon-lock ${styles.iconLock}`} />
+          {sec && (
+            <i
+              className={`icon-eye ${styles.iconSecret}`}
+              onClick={() => setSec(!sec)}
+            />
+          )}
+        </div>
+        <div className={styles.bottomContainer}>
+          <button className={styles.loginButton} onClick={handleLogin}>
+            Entrar
+          </button>
+        </div>
+        <div className={styles.optionsContainer}>
+          <button className={styles.forgotPasswordButton}>
+            <a href="#" className={styles.forgotPasswordText}>
+              Esqueceu a senha?
+            </a>
+          </button>
+          <p className={styles.link}>
+            Não possui Login?{' '}
+            <Link href="/register" className={styles.registerLinkText}>
+              Cadastrar-se
+            </Link>
+          </p>
+        </div>
       </main>
     </div>
   );
