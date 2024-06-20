@@ -67,10 +67,13 @@ const LoginScreen = () => {
             Esqueceu a senha?
           </a>
         </button>
+
       <div className={styles.registerLinkContainer}>
+        
         <p className={styles.link}>
           Não possui Login?{' '}
-          <Link href="/register" className={styles.registerLinkText}>
+        
+        <Link href="/register" className={styles.registerLinkText}>
             Cadastrar-se
           </Link>
         </p>

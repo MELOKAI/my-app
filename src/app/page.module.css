@@ -52,12 +52,10 @@
   }
   
   .registerLinkContainer {
-    flex-direction: row;
+ 
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
     bottom: 0;
-    width: 200px;
-    margin-left: 00px;
   }
   
   .registerLinkText {
